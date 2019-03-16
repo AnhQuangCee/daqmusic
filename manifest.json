@@ -1,0 +1,26 @@
+{
+  "name": "DAQ Music Extension",
+  "description": "Live with music",
+  "version": "1.0",
+  "permissions":[
+      "activeTab",
+      "tabs"
+  ],
+  "browser_action":{
+      "default_title": "Image Source",
+      "default_popup": "music.html",
+      "default_icon": {
+        "16": "images/daq.png",
+        "32": "images/daq.png",
+        "48": "images/daq.png",
+        "128": "images/daq.png"
+      }
+  },
+  "icons": {
+    "16": "images/daq.png",
+    "32": "images/daq.png",
+    "48": "images/daq.png",
+    "128": "images/daq.png"
+  },
+  "manifest_version": 2
+}

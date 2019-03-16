@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Audio Player</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="vendor/reset.min.css">
+  <link rel="stylesheet" href="vendor/fontAwesome4.css">
+  <link rel='stylesheet' href='vendor/plyr.css'>
+  <link rel="stylesheet" href="css/music.css">
+  <script src="vendor/prefixfree.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="column add-bottom">
+        <div id="mainwrap">
+        	<span class="avatar"><i class="fas fa-compact-disc"></i></span>
+            <div id="npTitle"></div>
+            <div id="description"></div>
+          	<div id="audiowrap">
+                <div id="audio0">
+                    <audio id="audio1" preload controls>Your browser does not support HTML5 Audio! 😢</audio>
+                </div>
+                <div id="tracks">
+                    <a id="btnPrev"><i class="fas fa-step-backward"></i></a><a id="btnNext"><i class="fas fa-step-forward"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src='vendor/jquery.js'></script>
+<script src='vendor/html5media.js'></script>
+<script src='vendor/plyr.js'></script>
+<script  src="js/music.js"></script>
+</body>
+</html>

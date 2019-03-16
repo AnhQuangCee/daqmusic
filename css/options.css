@@ -1,0 +1,65 @@
+body{
+    margin:0px;
+    background-image: linear-gradient(-90deg, #ff4b1f, #ff9068);
+    height: 200px;
+    width: 500px;
+}
+.border{
+	border: 0.5px solid white;
+	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	margin-left: 10px;
+}
+.laptop{
+	position: absolute;
+	top: 40%;
+	left: 25%;
+	color: white;
+}
+.laptop i{
+	font-size: 35px;
+	padding-left: 7px;
+	line-height: 60px;
+}
+.gg{
+	margin-left: 20px;
+}
+.laptop p{
+	font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+.ggdrive{
+	position: absolute;
+	top: 40%;
+	left: 55%;
+	color: white;
+}
+.ggdrive i{
+	font-size: 40px;
+	line-height: 60px;
+	padding-left: 10px;
+}
+.ggdrive p{
+	font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.choose{
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 500px;
+	height: 50px;
+	text-align: center;
+	padding-top: 8%;
+}
+.ggdrive i:hover{
+	cursor: pointer;
+}
+.laptop i:hover{
+	cursor: pointer;
+}

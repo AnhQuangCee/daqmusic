@@ -1,0 +1,254 @@
+html,body{
+	background-image: linear-gradient(-90deg, #ff4b1f, #ff9068);
+	height: 160px;
+	width: 500px;
+}
+
+/* Global Styles
+================================================== */
+
+html,body {
+	-webkit-font-smoothing:antialiased;
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+}
+
+/* Audio Player Styles
+================================================== */
+
+audio {
+	display:none;
+}
+
+#audiowrap,
+#plwrap {
+	margin:0 auto;
+}
+
+#tracks {
+	font-size:0;
+	position:relative;
+	text-align:center;
+}
+
+#nowPlay {
+	display:block;
+	font-size:0;
+}
+
+/* override */
+.plyr__control{
+	color:white;
+}
+.fa-step-backward{
+	font-size: 25px;
+}
+.fa-step-forward{
+	font-size: 25px;
+}
+.plyr__controls{
+	height: 100px;
+}
+.plyr__controls button[data-plyr="restart"]{
+	position: absolute;
+	top: 60px;
+	left: 370px;
+}
+.plyr__controls button[data-plyr="play"]{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 60px;
+}
+.plyr__volume{
+	position: absolute;
+	top: 60px;
+	left: 20px;
+}
+.plyr__time--duration{
+	position: absolute;
+	left: 0px;
+}
+a[data-plyr="download"]{
+	position: absolute;
+	top: 60px;
+	left: 400px;
+}
+.fa-step-forward {
+    position: absolute;
+    top: -40px;
+    left: 276px;
+    font-size: 21px;
+	height: 32px;
+	width: 32px;
+	line-height: 32px;
+	border-radius: 3px;
+}
+.fa-step-backward {
+    position: absolute;
+    top: -40px;
+    left: 193px;
+    font-size: 21px;
+	height: 32px;
+	width: 32px;
+	line-height: 32px;
+	border-radius: 3px;
+}
+.fa-step-backward:hover{
+	background: rgba(0,0,0,.1);
+}
+.fa-step-forward:hover{
+	background: rgba(0,0,0,.1);
+}
+.plyr--full-ui input[type=range]{
+	color: white;
+}
+.plyr--audio .plyr__control.plyr__tab-focus, .plyr--audio .plyr__control:hover, .plyr--audio .plyr__control[aria-expanded=true] {
+    background-color:rgba(0,0,0,.1);
+    color: #fff;
+}
+/* override */
+#nowPlay span {
+	display:inline-block;
+	font-size:1.05rem;
+	vertical-align:top;
+}
+
+#nowPlay span#npAction {
+	padding:21px;
+	width:30%;
+}
+
+#npTitle {
+	padding: 25px 0px 0px 140px;
+	text-align: left;
+	width:100%;
+	font-size: 22px;
+}
+#description {
+	padding: 4px 0px 0px 140px;
+	text-align: left;
+	width:100%;
+	font-size: 16px;
+	position: absolute;
+}
+
+#plList li {
+	cursor:pointer;
+	display:block;
+	margin:0;
+	padding:21px 0;
+}
+
+#plList li:hover {
+	background-color:rgba(0,0,0,.1);
+}
+
+.plItem {
+	position:relative;
+}
+
+.plTitle {
+	left:50px;
+	overflow:hidden;
+	position:absolute;
+	right:65px;
+	text-overflow:ellipsis;
+	top:0;
+	white-space:nowrap;
+}
+
+.plNum {
+	padding-left:21px;
+	width:25px;
+}
+
+.plLength {
+	padding-left:21px;
+	position:absolute;
+	right:21px;
+	top:0;
+}
+
+.plSel,
+.plSel:hover {
+	background-color:rgba(0,0,0,.1);
+	color:#fff;
+	cursor:default !important;
+}
+
+#tracks a {
+	display:inline-block;
+	text-decoration:none;
+	cursor: pointer;
+}
+
+/* Plyr Overrides
+================================================== */
+
+.plyr--audio .plyr__controls {
+	background-color:transparent;
+	border:none;
+	color:#fff;
+	padding:20px 20px 20px 13px;
+	width:100%;
+}
+.plyr--audio .plyr__controls button.tab-focus:focus,
+.plyr--audio .plyr__controls button:hover,
+.plyr__play-large {
+	background:rgba(0,0,0,.1);
+}
+
+.plyr__progress--played,
+.plyr__volume--display {
+	color:rgba(0,0,0,.1);
+}
+
+.plyr--audio .plyr__progress--buffer,
+.plyr--audio .plyr__volume--display {
+	background:rgba(0,0,0,.1);
+}
+
+.plyr--audio .plyr__progress--buffer {
+	color:rgba(0,0,0,.1);
+}
+
+
+/* Media Queries
+================================================== */
+
+@media only screen and (max-width:600px) {
+	#nowPlay span#npAction { display:none; }
+	#nowPlay span#npTitle { display:block; text-align:center; width:100%; }
+}
+
+/*SCROLLBAR*/
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-image: linear-gradient(-90deg, #ff4b1f, #ff9068);
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+}
+
+/*Custom UI*/
+.avatar{
+	position: absolute;
+	top: 20px;
+	left: 50px;
+	font-size: 55px;
+}
